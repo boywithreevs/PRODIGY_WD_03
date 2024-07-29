@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #1e90ff;
+    text-shadow: 0 0 10px #1e90ff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #444;
+}
+
+.neon-button {
+    border: none;
+    outline: none;
+    color: white;
+    background: #1e90ff;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1e90ff, 0 0 20px #1e90ff, 0 0 25px #1e90ff;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 20px #1e90ff, 0 0 30px #1e90ff, 0 0 40px #1e90ff, 0 0 50px #1e90ff;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #1e90ff;
+}
